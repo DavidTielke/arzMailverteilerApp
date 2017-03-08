@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{468EA80D-7711-454F-9EA5-FF3D9FD05473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{2ED731FC-B791-41DA-8660-8D723A23A864}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{0DAF9A96-FFCF-4A08-A592-E608C1558C6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{D3ACF3DA-8A3B-446D-9A3F-B68792A2DD77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{00DC2064-CDD3-4281-89F8-D0364F13E999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStoring", "DataStoring\DataStoring.csproj", "{A20AE708-8CAC-4095-90C9-47925C3DD888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailDistributing", "MailDistributing\MailDistributing.csproj", "{6953B535-DCA6-479B-9180-5CADE81900AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSending", "MailSending\MailSending.csproj", "{6A41FB1F-1CE4-4869-89D9-8C15A7F34889}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailPolling", "MailPolling\MailPolling.csproj", "{EA45F23D-ADD9-4E1F-8C2F-DD9D4EFE42C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataClasses", "DataClasses\DataClasses.csproj", "{3BC8899E-BEBE-4C62-8CCA-D868EE0520A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ED731FC-B791-41DA-8660-8D723A23A864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED731FC-B791-41DA-8660-8D723A23A864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED731FC-B791-41DA-8660-8D723A23A864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED731FC-B791-41DA-8660-8D723A23A864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A20AE708-8CAC-4095-90C9-47925C3DD888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20AE708-8CAC-4095-90C9-47925C3DD888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20AE708-8CAC-4095-90C9-47925C3DD888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20AE708-8CAC-4095-90C9-47925C3DD888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6953B535-DCA6-479B-9180-5CADE81900AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6953B535-DCA6-479B-9180-5CADE81900AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6953B535-DCA6-479B-9180-5CADE81900AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6953B535-DCA6-479B-9180-5CADE81900AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A41FB1F-1CE4-4869-89D9-8C15A7F34889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A41FB1F-1CE4-4869-89D9-8C15A7F34889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A41FB1F-1CE4-4869-89D9-8C15A7F34889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A41FB1F-1CE4-4869-89D9-8C15A7F34889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA45F23D-ADD9-4E1F-8C2F-DD9D4EFE42C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA45F23D-ADD9-4E1F-8C2F-DD9D4EFE42C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA45F23D-ADD9-4E1F-8C2F-DD9D4EFE42C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA45F23D-ADD9-4E1F-8C2F-DD9D4EFE42C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BC8899E-BEBE-4C62-8CCA-D868EE0520A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC8899E-BEBE-4C62-8CCA-D868EE0520A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC8899E-BEBE-4C62-8CCA-D868EE0520A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC8899E-BEBE-4C62-8CCA-D868EE0520A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ED731FC-B791-41DA-8660-8D723A23A864} = {468EA80D-7711-454F-9EA5-FF3D9FD05473}
+		{A20AE708-8CAC-4095-90C9-47925C3DD888} = {D3ACF3DA-8A3B-446D-9A3F-B68792A2DD77}
+		{6953B535-DCA6-479B-9180-5CADE81900AD} = {0DAF9A96-FFCF-4A08-A592-E608C1558C6A}
+		{6A41FB1F-1CE4-4869-89D9-8C15A7F34889} = {0DAF9A96-FFCF-4A08-A592-E608C1558C6A}
+		{EA45F23D-ADD9-4E1F-8C2F-DD9D4EFE42C3} = {0DAF9A96-FFCF-4A08-A592-E608C1558C6A}
+		{3BC8899E-BEBE-4C62-8CCA-D868EE0520A7} = {00DC2064-CDD3-4281-89F8-D0364F13E999}
+	EndGlobalSection
+EndGlobal
