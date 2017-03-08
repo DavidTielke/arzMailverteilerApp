@@ -5,22 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 using DataStoring;
 using MailDistributing;
+using MailDistributing.Contract;
 using MailPolling;
 using MailSending;
+using Mappings;
+using Ninject;
 
 namespace ConsoleClient
 {
     class Program
     {
+        private static IMailDistributor _distributor;
+
+        static Program()
+        {
+            var kernel = new StandardKernel(new Aggregator().Mappings);
+            _distributor = kernel.Get<IMailDistributor>();
+        }
+
         static void Main(string[] args)
         {
-            var poller = new MailPoller();
-            var sender = new MailSender();
-            var repo = new ReceiverRepository();
-
-            var distributor = new MailDistributor(poller, sender, repo);
-
-            distributor.Start();
+            _distributor.Start();
 
             Console.ReadKey();
         }

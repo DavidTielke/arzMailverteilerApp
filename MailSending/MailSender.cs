@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MailDistributing;
+using MailDistributing.Contract;
+using MailSending.Contract;
 
 namespace MailSending
 {
     public class MailSender : IMailSender
     {
-        private readonly MailDistributor _mailDistributor;
+        private readonly IMailDistributor _mailDistributor;
 
-        public MailSender(MailDistributor mailDistributor)
+        public MailSender(IMailDistributor mailDistributor)
         {
             _mailDistributor = mailDistributor;
         }

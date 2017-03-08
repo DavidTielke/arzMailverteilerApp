@@ -1,4 +1,4 @@
-namespace MailSending
+namespace MailSending.Contract
 {
     public interface IMailSender
     {

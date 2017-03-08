@@ -1,4 +1,4 @@
-namespace DataStoring
+namespace DataStoring.Contract
 {
     public interface IReceiverRepository
     {

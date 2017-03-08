@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataStoring;
+using DataStoring.Contract;
+using MailDistributing.Contract;
 using MailPolling;
+using MailPolling.Contract;
 using MailSending;
+using MailSending.Contract;
 
 namespace MailDistributing
 {
-    public class MailDistributor
+    public class MailDistributor : IMailDistributor
     {
         private readonly IMailPoller _poller;
         private readonly IMailSender _sender;

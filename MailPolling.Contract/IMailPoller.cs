@@ -1,4 +1,4 @@
-﻿namespace MailPolling
+﻿namespace MailPolling.Contract
 {
     public interface IMailPoller
     {

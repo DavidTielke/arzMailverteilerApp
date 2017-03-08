@@ -40,9 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMailSender.cs" />
     <Compile Include="MailSender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MailDistributing.Contract\MailDistributing.Contract.csproj">
+      <Project>{17AC3F03-FC15-4F59-BB96-00553F37CD5C}</Project>
+      <Name>MailDistributing.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MailSending.Contract\MailSending.Contract.csproj">
+      <Project>{E6EF4BC7-A216-4A42-9218-CEE9E6CE63F1}</Project>
+      <Name>MailSending.Contract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

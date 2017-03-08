@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MailDistributing;
+using MailDistributing.Contract;
+using MailPolling.Contract;
 
 namespace MailPolling
 {
     public class MailPoller : IMailPoller
     {
-        private readonly MailDistributor _mailDistributor;
+        private readonly IMailDistributor _mailDistributor;
 
-        public MailPoller(MailDistributor mailDistributor)
+        public MailPoller(IMailDistributor mailDistributor)
         {
             _mailDistributor = mailDistributor;
         }
