@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MailSending
 {
-    public class MailSender
+    public class MailSender : IMailSender
     {
         private readonly MailDistributor _mailDistributor;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MailPolling
 {
-    public class MailPoller
+    public class MailPoller : IMailPoller
     {
         private readonly MailDistributor _mailDistributor;
 

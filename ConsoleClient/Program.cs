@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataStoring;
 using MailDistributing;
+using MailPolling;
+using MailSending;
 
 namespace ConsoleClient
 {
@@ -11,7 +14,11 @@ namespace ConsoleClient
     {
         static void Main(string[] args)
         {
-            var distributor = new MailDistributor();
+            var poller = new MailPoller();
+            var sender = new MailSender();
+            var repo = new ReceiverRepository();
+
+            var distributor = new MailDistributor(poller, sender, repo);
 
             distributor.Start();
 

@@ -50,9 +50,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataStoring\DataStoring.csproj">
+      <Project>{A20AE708-8CAC-4095-90C9-47925C3DD888}</Project>
+      <Name>DataStoring</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MailDistributing\MailDistributing.csproj">
       <Project>{6953B535-DCA6-479B-9180-5CADE81900AD}</Project>
       <Name>MailDistributing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MailPolling\MailPolling.csproj">
+      <Project>{EA45F23D-ADD9-4E1F-8C2F-DD9D4EFE42C3}</Project>
+      <Name>MailPolling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MailSending\MailSending.csproj">
+      <Project>{6A41FB1F-1CE4-4869-89D9-8C15A7F34889}</Project>
+      <Name>MailSending</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

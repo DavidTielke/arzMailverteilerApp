@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStoring
 {
-    public class ReceiverRepository
+    public class ReceiverRepository : IReceiverRepository
     {
         public void Load()
         {

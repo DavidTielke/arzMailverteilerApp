@@ -11,15 +11,15 @@ namespace MailDistributing
 {
     public class MailDistributor
     {
-        private readonly MailPoller _poller;
-        private readonly MailSender _sender;
-        private readonly ReceiverRepository _repo;
+        private readonly IMailPoller _poller;
+        private readonly IMailSender _sender;
+        private readonly IReceiverRepository _repo;
 
-        public MailDistributor()
+        public MailDistributor(IMailPoller poller, IMailSender sender, IReceiverRepository repo)
         {
-            _poller = new MailPoller(this);
-            _sender = new MailSender(this);
-            _repo = new ReceiverRepository();
+            _poller = poller;
+            _sender = sender;
+            _repo = repo;
         }
 
         public void Start()
