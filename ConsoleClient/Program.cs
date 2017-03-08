@@ -12,6 +12,7 @@ namespace ConsoleClient
         static void Main(string[] args)
         {
             var distributor = new MailDistributor();
+
             distributor.Start();
 
             Console.ReadKey();
